@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+  </head>
+  <body class="font-josefin bg-pink-100">
+    <article class="w-full flex justify-center flex-col lg:flex-row">
+      <img
+        class="w-28 m-10 lg:hidden"
+        src="./base-apparel-coming-soon-master/images/logo.svg"
+        alt=""
+      />
+
+      <main>
+        <img
+          class="w-full mb-19 lg:hidden"
+          src="./base-apparel-coming-soon-master/images/hero-mobile.jpg"
+          alt=""
+        />
+      </main>
+      <div class="flex flex-col items-center lg:items-start lg:px-41">
+        <img
+          class="mb-30 hidden lg:flex lg:pt-10"
+          src="./base-apparel-coming-soon-master/images/logo.svg"
+          alt=""
+        />
+        <h2
+          class="text-5xl w-48 text-center text-gray-800 font-medium mb-8 lg:text-start lg:text-6xl"
+        >
+          <span class="font-light text-pink-400">WE'RE</span> COMING SOON
+        </h2>
+
+        <p
+          class="text-center px-8 text-pink-400 font-medium mb-7 lg:text-start lg:px-0 lg:w-100"
+        >
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form
+          id="email-form"
+          novalidate
+          class="w-[calc(100%-4rem)] max-w-md mb-10 lg:w-full"
+        >
+          <div class="relative">
+            <input
+              required
+              id="email-input"
+              class="w-full outline-none border border-pink-400 pr-20 py-3 pl-6 rounded-3xl"
+              type="email"
+              placeholder="Email Address"
+            />
+            <img
+              id="email-error-icon"
+              class="pointer-events-none absolute right-22 top-1/2 hidden w-5 -translate-y-1/2"
+              src="./base-apparel-coming-soon-master/images/icon-error.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <button
+              class="cursor-pointer absolute inset-y-0 right-0 flex w-20 items-center justify-center rounded-3xl bg-linear-to-r from-pink-300 via-red-300 to-red-400 px-5 shadow-lg shadow-red-300/50 transition-transform duration-200 hover:scale-105"
+              type="submit"
+              aria-label="Submit email address"
+            >
+              <img
+                class="w-3"
+                src="./base-apparel-coming-soon-master/images/icon-arrow.svg"
+                alt=""
+              />
+            </button>
+          </div>
+          <p id="email-error" class="hidden ml-6 mt-2 text-red-500" >Not an email</p>
+          <p id="email-pass" class="hidden text-green-500 mt-2 ml-6">Email Submitted</p>
+        </form>
+      </div>
+      <main>
+        <img
+          class="h-screen max-w-full hidden lg:flex"
+          src="./base-apparel-coming-soon-master/images/hero-desktop.jpg"
+          alt=""
+        />
+      </main>
+    </article>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
